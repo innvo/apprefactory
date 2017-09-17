@@ -1,0 +1,36 @@
+---
+layout: default
+title: Blog
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body class="fix-header">
+    <div id="main-wrapper">
+        <div class="page-wrapper">
+            <div class="container-fluid">
+                   <div class="row">
+                   <div class="container">
+                     <h2 class="spacing">Blogs</h2>
+                      <div class="blog-posts">
+                        {% for post in site.posts %}
+                      <div class="blog-post spacing">
+                           <h3><a href=" {{site.baseurl}}{{post.url}} ">{{ post.title }}</a></h3>
+                           <p class="summary">
+                            {{ post.category }}
+                           <span class="date">
+                            {{ post.date | date: '%B %d, %Y' }}
+                           </span>
+                      </p>
+                         {{ post.excerpt }}
+                      </div>
+                  {% endfor %}
+                </div>
+               </div>
+             </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
