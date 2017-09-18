@@ -2,10 +2,7 @@
 layout: post
 title: What is application refactoring?
 category: refactoring
-date: "2017-09-17
+date: "2017-09-17"
 ---
 Application Refactoring is? XXX
 
-<img src="images/color-skim.png" />
-
-<img src="images/apprefactory-logo.gif" />
