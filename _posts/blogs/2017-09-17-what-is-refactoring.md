@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is application refactoring?
-category: refactoring
+category: blog
 date: "2017-09-17"
 ---
 <h2> Application Refactoring is? H2 </h2>

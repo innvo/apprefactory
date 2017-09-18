@@ -1,6 +1,7 @@
 ---
 layout: default
-title: FAQ
+title: Faqs
+order: 3
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -12,18 +13,18 @@ title: FAQ
             <div class="container-fluid">
                    <div class="row">
                    <div class="container">
-                     <h2 class="spacing">FAQs</h2>
+                     <h2 class="spacing">Faqs</h2>
                       <div class="blog-posts">
-                        {% for faq in site.faqs %}
+                        {% for post in site.categories.faqs %}
                       <div class="blog-post spacing">
-                           <h3><a href=" {{site.baseurl}}{{faq.url}} ">{{ faq.title }}</a></h3>
+                           <h3><a href=" {{site.baseurl}}{{post.url}} ">{{ post.title }}</a></h3>
                            <p class="summary">
-                            {{ faq.category }}
+                            {{ post.category }}
                            <span class="date">
-                            {{ faq.date | date: '%B %d, %Y' }}
+                            {{ post.date | date: '%B %d, %Y' }}
                            </span>
                       </p>
-                         {{ faq.excerpt }}
+                         {{ post.excerpt }}
                       </div>
                   {% endfor %}
                 </div>
