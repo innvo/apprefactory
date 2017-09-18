@@ -26,6 +26,8 @@ File: scss
 @import url(../scss/icons/material-design-iconic-font/css/materialdesignicons.min.css);
 @import url(../css/spinners.css);
 @import url(../css/animate.css);
+/*@import url(../css/inspinia.css);*/
+
 .preloader {
   width: 100%;
   height: 100%;
